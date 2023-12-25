@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plus and minus project</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        max-width: 1000px;
+        width: 100%;
+        padding: 20px;
+        margin: 0 auto;
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .plus,
+      .increase-decrease,
+      .minus {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #000000;
+        font-size: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .plus,
+      .increase-decrease,
+      .minus:hover {
+        cursor: pointer;
+      }
+      .minus-img,
+      .plus-img {
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <h1 class="population"></h1>
+        <div class="plus">
+          <img src="./images/plus.webp" class="plus-img" alt="" />
+        </div>
+        <div class="increase-decrease">0</div>
+        <div class="minus">
+          <img src="./images/minus.png" class="minus-img" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
